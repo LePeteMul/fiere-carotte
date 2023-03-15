@@ -1,0 +1,42 @@
+*{
+    --mainGreen: #7DC2A5
+}
+form{
+    display : flex;
+    flex-direction : column;
+    margin : 0 auto;
+    margin-left : 30%;
+    margin-right : 30%;
+    padding : 8px;
+
+}
+.formulaire{
+    display : flex ;
+    flex-direction : column;
+    
+    gap : 8px;
+    margin-top : 16px;
+}
+input{
+    gap : 8px;
+    border : 2px black solid;
+    width : 100%;
+    height : 32px;
+}
+
+#reservation{
+    margin-top : 32px;
+
+    width : 30%;
+    background-color : var(--mainGreen);
+    color : white;
+    
+
+}
+select{
+    gap : 8 px;
+    border : 2px black solid;
+    width : 100%;
+    height : 32px;
+    
+}
