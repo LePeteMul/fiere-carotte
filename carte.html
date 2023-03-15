@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="mainStyles.css">
     <link rel="stylesheet" href="homeStyles.css">
     <link rel="stylesheet" href="bigFooter.css">
-    <link rel="stylesheet" href="carte.css">
+    <link rel="stylesheet" href="carteStyles.css">
+    <link rel="stylesheet" href="smallFooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+
+
 
     <title>Document</title>
 </head>
@@ -39,13 +43,13 @@
         <h2>Menu</h2>
         <div class="navMenu">
             
-                <button class="main-button">Menu du jour</button>
+                <button class="main-button"id="jour">Menu du jour</button>
             
-                <button class="main-button">Entrée</button>
+                <button class="main-button"id="entree">Entrée</button>
            
-                <button class="main-button">Plats</button>
+                <button class="main-button"id="plats">Plats</button>
             
-                <button class="main-button">Desserts</button>
+                <button class="main-button"id="desserts">Desserts</button>
             
         </div>
         <div class="lesMenus">
@@ -99,19 +103,19 @@
                 </p>
             </div>
             <div class="Menu Desserts">
-                <p>Carottes Rôties - 11€
+                <p>Carottes Rôties - 11€<br>
                     Brownies au tofu sans beurre, sans sucre et sans produits laitiers
                     <br>
                     <br>
 
 
-                    Carottes Rôties - 11€
+                    Carottes Rôties - 11€<br>
                     Mousse onctueuse au chocolat faite à base d'avocat
 
                     <br>
                     <br>
 
-                    Carottes Rôties - 11€
+                    Carottes Rôties - 11€<br>
                     Un gourmand clafoutis végétalien aux cerises
 
                 </p>
@@ -120,24 +124,25 @@
     </div>
     <footer>
         <div class="main-footer">
+
             <div class="footer-content">
+                <div class="functions-icon">
+                    <img id="mail" src="assets/mail.png">
+                    <img id="phone" src="assets/phone2.png">
+                    <img id="map" src="assets/map.png">
+                </div>
 
                 <div class="social-icon">
-                    <img src="assets/insta.png">
-                    <img src="assets/facebook.png">
-                    <img src="assets/twitter.png">
+                    <img id= "insta" src="assets/insta.png">
+                    <img id="facebook" src="assets/facebook.png">
+                    <img id="twitter" src="assets/twitter.png">
                 </div>
             </div>
 
 
+
         </div>
-        <ul>
-            <li>Accueil</li>
-            <li>La Carte</li>
-            <li>Nos valeurs</li>
-            <li>Nous contacter</li>
-            <li>Réservations</li>
-        </ul>
+
         <p>Mentions légales - ©Lafièrecarotte tous droits réservés
         </p>
     </footer>
