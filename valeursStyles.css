@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.boiteImageMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boiteImageMain img {
+    display: flex;
+    align-items: center;
+
+}
+
+.boiteImageTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boiteImageTop img {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+}
+
+
+
+
+.valeurs-img {
+
+    height: auto;
+    width: auto;
+    /*width: 200px;*/
+    overflow: hidden;
+    margin-top: calc(var(--regSpacing)*2);
+    padding: 8px;
+    display:flex;
+
+
+}
+
+.valeurs-img img {
+    width: 100%
+}

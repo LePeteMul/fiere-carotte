@@ -7,7 +7,32 @@ menuButton.addEventListener('click', function () {
     menuButton.classList.toggle('close');
 });
 
+//boutons du footer
+var mailButton = document.querySelector('#mail');
+mailButton.addEventListener('click', function(event){
+    event.target.style.visibility = 'hidden';
+})
+var phoneButton = document.querySelector('#phone');
+phoneButton.addEventListener('click', function(event){
+    event.target.style.visibility = 'hidden';
+})
+var mapButton = document.querySelector('#map');
+mapButton.addEventListener('click', function(event){
+    event.target.style.visibility = 'hidden';
+})
+var instaButton = document.querySelector('#insta');
+instaButton.addEventListener('click', function(event){
+    event.target.style.visibility = 'hidden';
+})
+var fbButton = document.querySelector('#facebook');
+fbButton.addEventListener('click', function(event){
+    event.target.style.visibility = 'hidden';
+})
+var twButton = document.querySelector('#twitter');
+twButton.addEventListener('click', function(event){
+    event.target.style.visibility = 'hidden';
+})
 
 
-// action bontton carte
+
 
