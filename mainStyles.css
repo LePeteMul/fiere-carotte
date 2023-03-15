@@ -200,3 +200,10 @@ h3 {
     text-align: center;
     font-size: calc(0.2rem + 3vw);
 }
+
+.carte{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
