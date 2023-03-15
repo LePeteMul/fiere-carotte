@@ -7,8 +7,6 @@ menuButton.addEventListener('click', function () {
     menuButton.classList.toggle('close');
 });
 
-
-
 //boutons du footer
 var mailButton = document.querySelector('#mail');
 mailButton.addEventListener('click', function(event){
@@ -34,3 +32,7 @@ var twButton = document.querySelector('#twitter');
 twButton.addEventListener('click', function(event){
     event.target.style.visibility = 'hidden';
 })
+
+
+
+
