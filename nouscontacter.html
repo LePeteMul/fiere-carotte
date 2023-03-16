@@ -16,29 +16,31 @@
 <header class="header">
     <h1 class="header-title">La fière carotte</h1>
     <div id="menu-button" class="close"></div>
-    <img class="logo" src="assets/main-logo.png">
+    <a href="./index.html"> <img class="logo" src="assets/main-logo.png"></a>
 </header>
 <nav id="menu">
     <ul>
-        <li>Menu du restaurant</li>
-        <li>Nos valeurs</li>
-        <li>Nous contacter</li>
+        <li><a href="./carte.html">Menu du restaurant</a></li>
+        <li><a href="./valeurs.html">Nos valeurs</a></li>
+        <li><a href="./nouscontacter.html">Nous contacter</a></li>
         <li>
-            <button class="menu-reserver">Réservation</button>
+            <button id="animatedButton" class="menu-reserver"><a href="./Reservation.html">
+                    <div id="messenger"></div>
+                </a>
+            </button>
         </li>
     </ul>
 </nav>
-
 <body>
     <div class="hero">
-        <button class="hero-reserver">Réservation</button>
+        <a class="hero-reserver" href="./Reservation.html">Réservation</a>
         <img class="hero-img" src="assets/img-cheval-carotte.jpg">
     </div>
 
     <div class="main-content">
         <h2>Nous contacter ?</h2>
         <div class="separator"></div>
-        <p>N'hésitez pas à nous contacter pour réserver ou poser vos questions !
+        <p id="textContactus">N'hésitez pas à nous contacter pour réserver ou poser vos questions !
             Sinon, venez nous voir directement 🙂</p>
     </div>
 
@@ -63,33 +65,32 @@
             <input type="submit" value="Envoyer" id="form_button" />
         </div>
     </form>
-    
+
     <script src="script.js"></script>
-</body>
-<footer>
-    <div class="main-footer">
+    <footer>
+        <div class="main-footer">
 
-        <div class="footer-content">
-            <div class="functions-icon">
-                <img id="mail" src="assets/mail.png">
-                <img id="phone" src="assets/phone2.png">
-                <img id="map" src="assets/map.png">
-            </div>
+            <div class="footer-content">
+                <div class="functions-icon">
+                    <a href="mailto: abc@example.com" target="_blank"> <img id="mail" src="assets/mail.png"></a>
+                    <a href=" +330606060606" target="_blank"> <img id="phone" src="assets/phone2.png"> </a>
+                    <a href="https://goo.gl/maps/PzpQMd1XEAXccWzd6" target="_blank"> <img id="map"
+                            src="assets/map.png"></a>
+                </div>
 
-            <div class="social-icon">
-                <img id= "insta" src="assets/insta.png">
-                <img id="facebook" src="assets/facebook.png">
-                <img id="twitter" src="assets/twitter.png">
+                <div class="social-icon">
+                    <a href="https://www.instagram.com" target="_blank"><img id="insta" src="assets/insta.png"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="assets/facebook.png"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="assets/twitter.png"></a>
+                </div>
             </div>
         </div>
+        <p>Mentions légales - ©Lafièrecarotte tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="scriptnouscontacter.js"></script>
+ 
 
-
-
-    </div>
-
-    <p>Mentions légales - ©Lafièrecarotte tous droits réservés
-    </p>
-</footer>
-
+</body>
 
 </html>
