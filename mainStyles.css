@@ -6,7 +6,9 @@
     --titleColor: black;
     --mainGreen: #7DC2A5;
     --mainOrange: #F18825;
+
     --white: white;
+
     --regSpacing: 8px;
     --titleFont: 'Kaisei Decol', serif
 }
@@ -213,7 +215,7 @@ nav li {
 }
 
 
-.main-content p {
+p {
     text-align: left;
     font-size: 0.8em;
 }
