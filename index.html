@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainStyles.css">
     <link rel="stylesheet" href="homeStyles.css">
-    <link rel="stylesheet" href="bigFooter.css">
+    <link rel="stylesheet" href="smallFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
@@ -22,9 +22,14 @@
     <ul>
         <li>Menu du restaurant</li>
         <li>Nos valeurs</li>
-        <li><a href="nouscontacter.html"></li>
+
+
+        <li>Nous contacter</li>
+
         <li>
-            <button class="menu-reserver">Réservation</button>
+            <button id="animatedButton" class="menu-reserver">
+                <div id="messenger"></div>
+            </button>
         </li>
     </ul>
 </nav>
@@ -39,46 +44,41 @@
     <div class="main-content">
         <h2>Qui sommes-nous ?</h2>
         <div class="separator"></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa ratione consectetur nisi magni
-            suscipit, distinctio sequi cupiditate impedit enim aut?</p>
+        <p>La Fière Carotte est un restaurant vegan convivial qui propose une cuisine savoureuse, élaborée à partir de
+            produits frais, locaux. Venez découvrir notre menu équilibré et
+            et respectueux de l'environnement dans une ambiance accueillante et éco-responsable.</p>
         <div class="main-img"><img src="assets/main-accueil.jpg"></div>
         <button class="main-button">notre menu</button>
         <div class="separator"></div>
         <h3>Du lundi au vendredi</h3>
-        <p>Midi : 12h00 - 14h30</p>
-        <p>Soir : 19h00 - 22h30</p>
+        <p class="ouverture">Midi : 12h00 - 14h30</p>
+        <p class="ouverture">Soir : 19h00 - 22h30</p>
     </div>
     <footer>
         <div class="main-footer">
+
             <div class="footer-content">
-                <p>TELEPHONE : 0134567898 <br>
-                    EMAIL : contact@labonnecarotte.com <br>
-                    ADRESSE : 3 rue Baron 44000 Nantes</p>
+                <div class="functions-icon">
+                    <img id="mail" src="assets/mail.png">
+                    <img id="phone" src="assets/phone2.png">
+                    <img id="map" src="assets/map.png">
+                </div>
+
                 <div class="social-icon">
-                    <img src="assets/insta.png">
-                    <img src="assets/facebook.png">
-                    <img src="assets/twitter.png">
+                    <img id="insta" src="assets/insta.png">
+                    <img id="facebook" src="assets/facebook.png">
+                    <img id="twitter" src="assets/twitter.png">
                 </div>
             </div>
 
-            <div class="footer-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10841.097528561053!2d-1.55627423195216!3d47.211213323200745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeb052a02407%3A0x188bca8c7735488f!2s3%20Rue%20Baron%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1678633949444!5m2!1sfr!2sfr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
+
         </div>
-        <ul>
-            <li>Accueil</li>
-            <li>La Carte</li>
-            <li>Nos valeurs</li>
-            <li>Nous contacter</li>
-            <li>Réservations</li>
-        </ul>
+
         <p>Mentions légales - ©Lafièrecarotte tous droits réservés
         </p>
     </footer>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="script.js"></script>
 
 </body>
