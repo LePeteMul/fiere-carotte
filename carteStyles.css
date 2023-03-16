@@ -19,9 +19,9 @@
 
 .lesMenus div {
     position: absolute;
-    color: red;
+    
 }
-/*
+
 .lesMenus {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,12 @@
 
 }
 
-/*
+.Menu {
+  width: 50%;
+  text-align: center;
+ 
+}
+
 .jour{
     visibility: hidden;
 }
@@ -42,7 +47,18 @@
 .plats{
     visibility: hidden;
 }
-
-.desserts{
+/*
+#desserts{
     visibility: hidden;
 }
+
+*/
+/*
+#mDesserts{
+    background-color: white;
+}
+
+#mPlats{
+    background-color: white;
+}
+*/
