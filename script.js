@@ -100,7 +100,8 @@ menuButton.addEventListener('click', function () {
 });
 
 
-//boutons du footer
+//boutons du footer (juste pour vérifier qu'ils marchent, pas d'utilité directe)
+
 var mailButton = document.querySelector('#mail');
 mailButton.addEventListener('click', function (event) {
     event.target.style.visibility = 'hidden';
