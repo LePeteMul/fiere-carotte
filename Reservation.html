@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <title>RESERVATION</title>
     <link rel="stylesheet" href="mainStyles.css">
     <link rel="stylesheet" href="ReservationStyles.css">
     <link rel="stylesheet" href="bigFooter.css">
-    <link rel="stylesheet" href="calendrierStyles.css">
+    
+    <link rel="stylesheet" href="smallFooter.css">
 </head>
 
-    <header class="header">
-        <h1 class="header-title">La fière carotte</h1>
-        <div id="menu-button" class="close"></div>
-        <img class="logo" src="assets/main-logo.png">
-    </header>
-    <nav id="menu">
-        <ul>
-            <li>Menu du restaurant</li>
-            <li>Nos valeurs</li>
-            <li>Nous contacter</li>
-            <li>
-                <button class="menu-reserver">Réservation</button>
-            </li>
-        </ul>
-    </nav>
+<header class="header">
+    <h1 class="header-title">La fière carotte</h1>
+    <div id="menu-button" class="close"></div>
+    <img class="logo" src="assets/main-logo.png">
+</header>
+<nav id="menu">
+    <ul>
+        <li>Menu du restaurant</li>
+        <li>Nos valeurs</li>
+        <li>Nous contacter </li>
+        <li>
+            <button class="menu-reserver">La Carte</button>
+        </li>
+    </ul>
+</nav>
+
 <body>
-    
+
     <div class="hero">
-        
-        <button class="hero-reserver">Menu</button>
-        <img class="hero-img" src="assets/hero-accueil.jpg">
+        <h2>Réserver une table </h2>
+        <button class="hero-reserver"> La Carte </button>
+        <img class="hero-img" src="assets/table vegan.jpg">
     </div>
 
 <div class="reservation">
-    <h2>Reservation </h2>
+    <h2>Réservation </h2>
     <div class="separator"></div>
 </div>
 
@@ -46,16 +49,17 @@
   
    
  
-    <form  method="post">
+    <form id="form" >
       
         <div class="formulaire">
             <label for="Date">Date de réservation :</label>
-            <input type="date" name="anniversaire">
+            <input type="date" id="date" >
+       
         </div>
         <div  class="deroul">
             <div  class="formulaire">
             <label for="time">Heure de réservation :</label>
-            <select id="heuress "name="heures">
+            <select id="heures "name="heures">
 
                 <option>12h00</option>
                 <option>12h30</option>
@@ -69,7 +73,7 @@
             </div>
             <div  class="formulaire">
                 <label for ="select"> Nombre de couverts :</label>
-                <select id="couverts "name="couverts">
+                <select id="couverts" name="couverts">
 
                     <option>1 couvert</option>
                     <option>2 couverts</option>
@@ -84,20 +88,23 @@
         </div >
         <div class="formulaire">
             <label for="name">Nom & Prenom :</label>
-            <input type="text" id="name" name="user_name">
+            <input type="text" id="name" >
+            
         </div>
         
         <div class="formulaire">
             <label for="Tel">Téléphone :</label>
-            <input type="text" id="tel" name="tel_num">
+            <input type="tel" id="tel" >
+          
+       
         </div >
+ 
         
-        
-<div class = "bres"> 
+<div class="main-button"> 
 
-<input id ="reservation" type="submit" value="Reserver">
+<button  id="reser" type="submit">Réserver</button> 
 </div>
-        </form>
+ </form>
 
 
   
@@ -105,37 +112,33 @@
 
 
 </body>
-    <footer>
-        <div class="main-footer">
-            <div class="footer-content">
-                <p>TELEPHONE : 0134567898 <br>
-                    EMAIL : contact@labonnecarotte.com <br>
-                    ADRESSE : 3 rue Baron 44000 Nantes</p>
-                <div class="social-icon">
-                    <img src="assets/insta.png">
-                    <img src="assets/facebook.png">
-                    <img src="assets/twitter.png">
-                </div>
+   
+<footer>
+    <div class="main-footer">
+
+        <div class="footer-content">
+            <div class="functions-icon">
+                <img id="mail" src="assets/mail.png">
+                <img id="phone" src="assets/phone2.png">
+                <img id="map" src="assets/map.png">
             </div>
 
-            <div class="footer-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10841.097528561053!2d-1.55627423195216!3d47.211213323200745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeb052a02407%3A0x188bca8c7735488f!2s3%20Rue%20Baron%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1678633949444!5m2!1sfr!2sfr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="social-icon">
+                <img id= "insta" src="assets/insta.png">
+                <img id="facebook" src="assets/facebook.png">
+                <img id="twitter" src="assets/twitter.png">
             </div>
         </div>
-        <ul>
-            <li>Accueil</li>
-            <li>La Carte</li>
-            <li>Nos valeurs</li>
-            <li>Nous contacter</li>
-            <li>Réservations</li>
-        </ul>
-        <p>Mentions légales - ©Lafièrecarotte tous droits réservés
-        </p>
-    </footer>
+
+
+
+    </div>
+
+    <p>Mentions légales - ©Lafièrecarotte tous droits réservés
+    </p>
+</footer>
+
     
     <script src="script.js"></script>
-    <script src="calendrier.js"> </script> 
+    <script src="scriptFormRes.js"> </script> 
 </html>
