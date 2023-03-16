@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="mainStyles.css">
     <link rel="stylesheet" href="homeStyles.css">
     <link rel="stylesheet" href="bigFooter.css">
-    <link rel="stylesheet" href="carte.css">
+    <link rel="stylesheet" href="carteStyles.css">
+    <link rel="stylesheet" href="smallFooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+
+
 
     <title>Document</title>
 </head>
@@ -39,33 +43,34 @@
         <h2>Menu</h2>
         <div class="navMenu">
             
-                <button class="main-button">Menu du jour</button>
+                <button class="main-button"id="bpJour">Menu du jour</button>
             
-                <button class="main-button">Entrée</button>
+                <button class="main-button"id="bpEntrees">Entrée</button>
            
-                <button class="main-button">Plats</button>
+                <button class="main-button"id="bpPlats">Plats</button>
             
-                <button class="main-button">Desserts</button>
+                <button class="main-button"id="bpDesserts">Desserts</button>
             
         </div>
-        <div class="lesMenus">
 
-            <div class="Menu jour">
+            <div class="Menu Jour"id = "mJour">
                 <p>Terrines - 11€<br>
                     Des terrines de légumes (courgettes et noix, légumes du soleil, etc.)
                     <br>
                     <br>
 
-                    Carottes Rôties - 11€<br>
+                    lasagnes - 11€<br>
                     Des lasagnes à la ratatouille, aux épinards, au tofu
                     <br>
                     <br>
+                  
 
-                    Carottes Rôties - 11€<br>
+
+                    Tiramisu - 111€<br>
                     Tiramisu végétalien au tofu
                 </p>
             </div>
-            <div class="Menu Entrees">
+            <div class="Menu Entrees"id = "mEntrees">
                 <p>Carottes Rôties - 11€<br>
                     carottes rotis avec un zeste de citron 
 
@@ -78,66 +83,67 @@
                     <br>
 
 
-                    Carottes Rôties - 11€<br>
-                    ut labore et dolore magna aliqua. Ut enim ad minim
+                    Carottes cru - 11€<br>
+                    Carottes du jardin a grignoter
                 </p>
             </div>
-            <div class="Menu Plats">
-                <p>Carottes Rôties - 11€<br>
+            <div class="Menu Plats"id = "mPlats">
+                <p>Chili con verde - 11€<br>
                     Du chili con à base de steaks de soja
 
                     <br>
                     <br>
 
-                    Carottes Rôties - 11€<br>
+                    Wok - 11€<br>
                     Des woks de légumes, tofu et sauce thaï
 
                     <br>
                     <br>
-                    Carottes Rôties - 11€<br>
+                    Salade de pates- 11€<br>
                     Salade de pâtes vegan
                 </p>
             </div>
-            <div class="Menu Desserts">
-                <p>Carottes Rôties - 11€
+            <div class="Menu Desserts" id = "mDesserts">
+                <p>Brownies - 11€<br>
                     Brownies au tofu sans beurre, sans sucre et sans produits laitiers
                     <br>
                     <br>
 
 
-                    Carottes Rôties - 11€
+                    Mousse - 11€<br>
                     Mousse onctueuse au chocolat faite à base d'avocat
 
                     <br>
                     <br>
 
-                    Carottes Rôties - 11€
+                    Clafoutis - 11€<br>
                     Un gourmand clafoutis végétalien aux cerises
 
                 </p>
             </div>
-        </div>
+        
     </div>
     <footer>
         <div class="main-footer">
+
             <div class="footer-content">
+                <div class="functions-icon">
+                    <img id="mail" src="assets/mail.png">
+                    <img id="phone" src="assets/phone2.png">
+                    <img id="map" src="assets/map.png">
+                </div>
 
                 <div class="social-icon">
-                    <img src="assets/insta.png">
-                    <img src="assets/facebook.png">
-                    <img src="assets/twitter.png">
+                    <img id= "insta" src="assets/insta.png">
+                    <img id="facebook" src="assets/facebook.png">
+                    <img id="twitter" src="assets/twitter.png">
                 </div>
             </div>
 
 
+
         </div>
-        <ul>
-            <li>Accueil</li>
-            <li>La Carte</li>
-            <li>Nos valeurs</li>
-            <li>Nous contacter</li>
-            <li>Réservations</li>
-        </ul>
+
         <p>Mentions légales - ©Lafièrecarotte tous droits réservés
         </p>
     </footer>
