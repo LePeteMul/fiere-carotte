@@ -11,14 +11,14 @@
 }
 
 .boiteImageMain img {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    */
 
 }
 
 .boiteImageTop {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -26,7 +26,7 @@
 .boiteImageTop img {
     display: flex;
     align-items: center;
-    max-width: 120px;
+    max-width: 90%;
 }
 
 
