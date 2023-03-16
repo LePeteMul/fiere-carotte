@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainStyles.css">
-    <link rel="stylesheet" href="bigFooter.css">
     <link rel="stylesheet" href="camStyle.css">
+    <link rel="stylesheet" href="smallFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
 </header>
 <nav id="menu">
     <ul>
-        <li><a href="carte.html">Nos menus</a></li>
-        <li><a href="valeurs.hthml">Nos valeurs</a></li>
-        <li><a href="nouscontacter.html">Nous contacter</a></li>
+        <li>Menu du restaurant</li>
+        <li>Nos valeurs</li>
+        <li>Nous contacter</li>
         <li>
             <button class="menu-reserver">Réservation</button>
         </li>
@@ -34,9 +34,13 @@
         <button class="hero-reserver">Réservation</button>
         <img class="hero-img" src="assets/img-cheval-carotte.jpg">
     </div>
-    <h2>Nous contacter :</h2>
-    <p>N'hésitez pas à nous contacter pour réserver ou poser vos questions !
-        Sinon, venez nous voir directement 🙂</p>
+
+    <div class="main-content">
+        <h2>Nous contacter ?</h2>
+        <div class="separator"></div>
+        <p>N'hésitez pas à nous contacter pour réserver ou poser vos questions !
+            Sinon, venez nous voir directement 🙂</p>
+    </div>
 
     <form id="contact_form">
         <div class="name">
@@ -59,27 +63,33 @@
             <input type="submit" value="Envoyer" id="form_button" />
         </div>
     </form>
-    </div>
-    <footer>
-        <div class="main-footer">
+    
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="main-footer">
 
-            <div class="footer-content">
-                <div class="functions-icon">
-                    <img id="mail" src="assets/mail.png">
-                    <img id="phone" src="assets/phone2.png">
-                    <img id="map" src="assets/map.png">
-                </div>
+        <div class="footer-content">
+            <div class="functions-icon">
+                <img id="mail" src="assets/mail.png">
+                <img id="phone" src="assets/phone2.png">
+                <img id="map" src="assets/map.png">
+            </div>
 
-                <div class="social-icon">
-                    <img id="insta" src="assets/insta.png">
-                    <img id="facebook" src="assets/facebook.png">
-                    <img id="twitter" src="assets/twitter.png">
-                </div>
+            <div class="social-icon">
+                <img id= "insta" src="assets/insta.png">
+                <img id="facebook" src="assets/facebook.png">
+                <img id="twitter" src="assets/twitter.png">
             </div>
         </div>
-        <p>Mentions légales - ©Lafièrecarotte tous droits réservés</p>
-    </footer>
 
-</body>
+
+
+    </div>
+
+    <p>Mentions légales - ©Lafièrecarotte tous droits réservés
+    </p>
+</footer>
+
 
 </html>
