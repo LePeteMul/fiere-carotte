@@ -211,6 +211,7 @@ textarea {
   font-family: var(--titleFont);
   width: clamp(100px, 40%, 250px);
   font-size: calc(0.1em + 2.7vw);
+  cursor: pointer;
 }
 
 #contact_form {
