@@ -10,6 +10,8 @@
 }
 
 .main-button {
+    text-decoration: none;
+    color: inherit;
     margin-top: calc(var(--regSpacing)*2);
     margin-left: auto;
     margin-right: auto;
@@ -22,6 +24,7 @@
     font-family: var(--titleFont);
     width: clamp(100px, 40%, 250px);
     font-size: calc(0.1em + 2.7vw);
+    text-align: center;
 }
 
 .ouverture {

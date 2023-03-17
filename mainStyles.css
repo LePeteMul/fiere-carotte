@@ -6,9 +6,7 @@
     --titleColor: black;
     --mainGreen: #7DC2A5;
     --mainOrange: #F18825;
-
     --white: white;
-
     --regSpacing: 8px;
     --titleFont: 'Kaisei Decol', serif
 }
@@ -90,6 +88,11 @@ nav li {
     font-family: var(--titleFont);
 }
 
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu-reserver {
     background-color: var(--mainOrange);
     color: inherit;
@@ -118,6 +121,7 @@ nav li {
 
 #menu.show-menu {
     transform: translateY(50px);
+    z-index: 2;
 
 }
 
@@ -156,7 +160,7 @@ nav li {
     overflow: hidden;
     width: 100vw;
     position: relative;
-    z-index: -1;
+
     padding-top: 50px;
     height: 32vh;
 }
@@ -186,6 +190,9 @@ nav li {
 }
 
 .hero-reserver {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
     position: absolute;
     left: 0;
     right: 0;
