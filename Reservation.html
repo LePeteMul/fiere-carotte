@@ -40,6 +40,7 @@
 <div class="reservation">
     <h2>Réservation </h2>
     <div class="separator"></div>
+    <span id="erreurdate"> </span>
 </div>
 
 
@@ -52,14 +53,17 @@
     <form id="form" >
       
         <div class="formulaire">
+            <div class="box">
             <label for="Date">Date de réservation :</label>
+            
+            </div>
             <input type="date" id="date" >
-       
+            
         </div>
         <div  class="deroul">
             <div  class="formulaire">
             <label for="time">Heure de réservation :</label>
-            <select id="heures "name="heures">
+            <select id="heures">
 
                 <option>12h00</option>
                 <option>12h30</option>
@@ -69,11 +73,15 @@
                 <option>19h30</option>
                 <option>20h00</option>
                 <option>20h30</option>
+                <option>21h00</option>
+                <option>21h30</option>
+
+
             </select>
             </div>
             <div  class="formulaire">
                 <label for ="select"> Nombre de couverts :</label>
-                <select id="couverts" name="couverts">
+                <select id="couverts" >
 
                     <option>1 couvert</option>
                     <option>2 couverts</option>
@@ -89,20 +97,20 @@
         <div class="formulaire">
             <label for="name">Nom & Prenom :</label>
             <input type="text" id="name" >
-            
+            <span id="erreur"> </span>
         </div>
         
         <div class="formulaire">
             <label for="Tel">Téléphone :</label>
             <input type="tel" id="tel" >
-          
+            <span id="erreur"> </span>
        
         </div >
  
         
 <div class="main-button"> 
 
-<button  id="reser" type="submit">Réserver</button> 
+<button  id="reser" type="submit" >Réserver</button> 
 </div>
  </form>
 
@@ -118,15 +126,15 @@
 
         <div class="footer-content">
             <div class="functions-icon">
-                <img id="mail" src="assets/mail.png">
-                <img id="phone" src="assets/phone2.png">
-                <img id="map" src="assets/map.png">
+                <a href="mailto: abc@example.com" target="_blank"> <img id="mail" src="assets/mail.png"></a>
+                <a href=" +330606060606" target="_blank"> <img id="phone" src="assets/phone2.png"> </a>
+                <a href="https://goo.gl/maps/PzpQMd1XEAXccWzd6" target="_blank"> <img id="map" src="assets/map.png"></a>
             </div>
 
             <div class="social-icon">
-                <img id= "insta" src="assets/insta.png">
-                <img id="facebook" src="assets/facebook.png">
-                <img id="twitter" src="assets/twitter.png">
+                <a href="https://www.instagram.com" target="_blank"><img id="insta" src="assets/insta.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="assets/facebook.png"></a>
+                <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="assets/twitter.png"></a>
             </div>
         </div>
 
