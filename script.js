@@ -99,6 +99,7 @@ menuButton.addEventListener('click', function () {
     var messenger = new Messenger($('#messenger'));
 });
 
+
 var bpJour = document.querySelector('#bpJour');
 var bpEntrees = document.querySelector('#bpEntrees');
 var bpPlats = document.querySelector('#bpPlats');
@@ -109,34 +110,30 @@ let mEntrees = document.getElementById("mEntrees");
 let mPlats = document.getElementById("mPlats");
 let mDesserts = document.getElementById("mDesserts");
 
-bpJour.addEventListener("click", () => {
-    if (getComputedStyle(mJour).display != "none") {
-        mJour.style.display = "none";
-    } else {
-        d1.style.display = "block";
-    }
-})
 
-bpEntrees.addEventListener("click", () => {
-    if (getComputedStyle(mEntrees).display != "none") {
-        mEntrees.style.display = "none";
+bpJour.addEventListener("click", () =>{
+      mPlats.style.display = "";
+      mEntrees.style.display = "none";
+      mDesserts.style.display = "none";
+      mJour.style.display = "block";
+  })
 
-    } else {
-        mEntrees.style.display = "block";
-    }
-})
+  bpEntrees.addEventListener("click", () => {
+    mPlats.style.display = "none";
+    mEntrees.style.display = "block";
+    mDesserts.style.display = "none";
+    mJour.style.display = "none";
+  })
 
-bpPlats.addEventListener("click", () => {
-    if (getComputedStyle(mPlats).display != "none") {
-        mPlats.style.display = "none";
-    } else {
-        mPlats.style.display = "block";
-    }
-})
-bpDesserts.addEventListener("click", () => {
-    if (getComputedStyle(mDesserts).display != "none") {
-        mDesserts.style.display = "none";
-    } else {
-        mDesserts.style.display = "block";
-    }
-})
+  bpPlats.addEventListener("click", () => {
+    mPlats.style.display = "block";
+    mEntrees.style.display = "none";
+    mDesserts.style.display = "none";
+    mJour.style.display = "none";
+  })
+  bpDesserts.addEventListener("click", () => {
+    mPlats.style.display = "none";
+    mEntrees.style.display = "none";
+    mDesserts.style.display = "block";
+    mJour.style.display = "none";
+  })
