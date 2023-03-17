@@ -137,34 +137,34 @@ let mEntrees = document.getElementById("mEntrees");
 let mPlats = document.getElementById("mPlats");
 let mDesserts = document.getElementById("mDesserts");
 
-bpJour.addEventListener("click", () =>{
-    if(getComputedStyle(mJour).display != "none"){
-      mJour.style.display = "none";
+bpJour.addEventListener("click", () => {
+    if (getComputedStyle(mJour).display != "none") {
+        mJour.style.display = "none";
     } else {
-      d1.style.display = "block";
+        d1.style.display = "block";
     }
-  })
+})
 
-  bpEntrees.addEventListener("click", () => {
-    if(getComputedStyle(mEntrees).display != "none"){
-      mEntrees.style.display = "none";
-      
-    } else {
-      mEntrees.style.display = "block";
-    }
-  })
+bpEntrees.addEventListener("click", () => {
+    if (getComputedStyle(mEntrees).display != "none") {
+        mEntrees.style.display = "none";
 
-  bpPlats.addEventListener("click", () => {
-    if(getComputedStyle(mPlats).display != "none"){
-      mPlats.style.display = "none";
     } else {
-      mPlats.style.display = "block";
+        mEntrees.style.display = "block";
     }
-  })
-  bpDesserts.addEventListener("click", () => {
-    if(getComputedStyle(mDesserts).display != "none"){
-      mDesserts.style.display = "none";
+})
+
+bpPlats.addEventListener("click", () => {
+    if (getComputedStyle(mPlats).display != "none") {
+        mPlats.style.display = "none";
     } else {
-      mDesserts.style.display = "block";
+        mPlats.style.display = "block";
     }
-  })
+})
+bpDesserts.addEventListener("click", () => {
+    if (getComputedStyle(mDesserts).display != "none") {
+        mDesserts.style.display = "none";
+    } else {
+        mDesserts.style.display = "block";
+    }
+})
