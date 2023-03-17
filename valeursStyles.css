@@ -3,17 +3,10 @@
     padding: 0px;
 }
 
-
 .boiteImageMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.boiteImageMain img {
-    /* display: flex;
-    */
-
 }
 
 .boiteImageTop {
@@ -29,20 +22,13 @@
     max-width: 90%;
 }
 
-
-
-
 .valeurs-img {
-
     height: auto;
     width: auto;
-    /*width: 200px;*/
     overflow: hidden;
     margin-top: calc(var(--regSpacing)*2);
     padding: 8px;
     display:flex;
-
-
 }
 
 .valeurs-img img {
