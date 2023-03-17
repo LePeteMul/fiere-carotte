@@ -17,6 +17,9 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  a {
+    text-decoration: none;
+  }
 
 .hero {
   display: flex;
@@ -37,13 +40,6 @@
     display: flex;
     flex-direction: column;
     align-items:left;
-}
-
-.main-content p {
-  text-align: left;
-  font-size: 0.8em;
-  margin: 0px;;
-  padding-top: 8px;
 }
 
 h1 {
@@ -79,20 +75,11 @@ h2 {
   border-bottom: 2px solid var(--titleColor);
 }
 
-.main-content p {
-    
-    text-align:left;
-    font-size: 0.8em;
-}
-
-
-p {
+#textContactus {
   
-    margin-left:50px;
-    margin-right: 50px;
     text-decoration: none;
     color: black;
-    margin-top: 50px;
+    margin-top: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
@@ -256,28 +243,34 @@ textarea {
 	color: #474544;
 }
 
-#form_button {
-  background:rgb(247, 243, 243);
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Kaisei Decol', serif;
-  font-size:10px;
-  font-weight: bold;
-  outline: none;
-  padding: 15px 25px;
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-  border-radius: 10px;
-  margin-top:15px;
+#main-button {
+  margin-top: calc(var(--regSpacing)*2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--regSpacing);
+  background-color: var(--mainGreen);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  text-transform: capitalize;
+  font-family: var(--titleFont);
+  width: clamp(100px, 40%, 250px);
+  font-size: calc(0.1em + 2.7vw);
 }
 
-#form_button:hover {
-  background: #474544;
-  color: #F2F3EB;
+#form_button {
+  margin-top: calc(var(--regSpacing)*2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--regSpacing);
+    background-color: var(--mainGreen);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-transform: capitalize;
+    font-family: var(--titleFont);
+    width: clamp(100px, 40%, 250px);
+    font-size: calc(0.1em + 2.7vw);
 }
 
 #contact_form {
@@ -288,6 +281,7 @@ textarea {
   padding-top: 35px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
