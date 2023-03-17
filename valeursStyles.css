@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.boiteImageMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boiteImageTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.boiteImageTop img {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.valeurs-img {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    margin-top: calc(var(--regSpacing)*2);
+    padding: 8px;
+    display:flex;
+}
+
+.valeurs-img img {
+    width: 100%
+}

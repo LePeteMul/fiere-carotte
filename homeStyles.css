@@ -10,18 +10,23 @@
 }
 
 .main-button {
+    text-decoration: none;
+    color: inherit;
     margin-top: calc(var(--regSpacing)*2);
-    background-color: var(--mainGreen);
-    border: none;
-    border-radius: 3px;
-    padding: 10px 5px;
-    text-transform: uppercase;
-    color: var(--white);
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(var(--regSpacing)*2);
+    margin-bottom: var(--regSpacing);
+    background-color: var(--mainGreen);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-transform: capitalize;
+    font-family: var(--titleFont);
     width: clamp(100px, 40%, 250px);
     font-size: calc(0.1em + 2.7vw);
-    font-weight: 600;
-    margin-bottom: var(--regSpacing);
+    text-align: center;
+}
+
+.ouverture {
+    text-align: center;
 }
