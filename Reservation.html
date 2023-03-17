@@ -16,15 +16,20 @@
 <header class="header">
     <h1 class="header-title">La fière carotte</h1>
     <div id="menu-button" class="close"></div>
-    <img class="logo" src="assets/main-logo.png">
+    <a href="./index.html"> <img class="logo" src="assets/main-logo.png"></a>
 </header>
 <nav id="menu">
     <ul>
-        <li>Menu du restaurant</li>
-        <li>Nos valeurs</li>
-        <li>Nous contacter </li>
+        <li><a href="./carte.html">Menu du restaurant</a></li>
+        <li><a href="./valeurs.html">Nos valeurs</a></li>
+        <li><a href="./nouscontacter.html">Nous contacter</a></li>
+
+
         <li>
-            <button class="menu-reserver">La Carte</button>
+            <button id="animatedButton" class="menu-reserver"><a href="./carte.html">
+                <div id="messenger">La Carte</div>
+            </a>
+            </button>
         </li>
     </ul>
 </nav>
@@ -32,9 +37,9 @@
 <body>
 
     <div class="hero">
-        <h2>Réserver une table </h2>
-        <button class="hero-reserver"> La Carte </button>
-        <img class="hero-img" src="assets/table vegan.jpg">
+        <h2>Réserver une table</h2>
+        <a class="hero-reserver" href="./carte.html">La carte</a>
+        <img class="hero-img" src="assets/hero-accueil.jpg">
     </div>
 
 <div class="reservation">
@@ -123,12 +128,13 @@
    
 <footer>
     <div class="main-footer">
-
         <div class="footer-content">
+
             <div class="functions-icon">
                 <a href="mailto: abc@example.com" target="_blank"> <img id="mail" src="assets/mail.png"></a>
                 <a href=" +330606060606" target="_blank"> <img id="phone" src="assets/phone2.png"> </a>
-                <a href="https://goo.gl/maps/PzpQMd1XEAXccWzd6" target="_blank"> <img id="map" src="assets/map.png"></a>
+                <a href="https://goo.gl/maps/PzpQMd1XEAXccWzd6" target="_blank"> <img id="map"
+                        src="assets/map.png"></a>
             </div>
 
             <div class="social-icon">
@@ -137,13 +143,8 @@
                 <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="assets/twitter.png"></a>
             </div>
         </div>
-
-
-
     </div>
-
-    <p>Mentions légales - ©Lafièrecarotte tous droits réservés
-    </p>
+    <p>Mentions légales - ©Lafièrecarotte tous droits réservés</p>
 </footer>
 
     
