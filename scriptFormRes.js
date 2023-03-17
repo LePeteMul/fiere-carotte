@@ -38,11 +38,11 @@ form.onsubmit=function(event){
         erreurdate.innerHTML = "Vous ne pouvez pas remonter le temps :("
         
     }
-    if (newdate.getDay()==0){
+    if (newdate.getDay()==0||newdate.getDay()==6){
         input[0].style.border="2px red solid"
         valid = false;
         erreurdate.style.visibility ="visible";
-        erreurdate.innerHTML = "La fière carotte n'est pas ouverte le dimanche :("
+        erreurdate.innerHTML = "La fière carotte n'est pas ouverte le week-end :("
 
     }
     if (valid){
