@@ -2,15 +2,16 @@
 
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
 }
 
-h4{
+h4 {
     display: flex;
     justify-content: center;
     font-size: 16px;
 }
+
 .navMenu1 {
     display: flex;
     flex-direction: column;
@@ -31,21 +32,24 @@ h4{
     padding: 10px 5px;
     text-transform: capitalize;
     font-family: var(--titleFont);
-     font-size: calc(0.1em + 2.7vw);
-     width: 80%;
+    font-size: calc(0.1em + 2.7vw);
+    width: 80%;
+    cursor: pointer;
 
 }
 
-#p1{
- padding:calc(var(--regSpacing)*3);
+#p1 {
+    padding: calc(var(--regSpacing)*3);
 }
 
 
-.Carte #p1{
+.Carte #p1 {
     text-align: center;
 
 }
 
-#mEntrees,#mPlats,#mDesserts{
-display: none;
+#mEntrees,
+#mPlats,
+#mDesserts {
+    display: none;
 }
