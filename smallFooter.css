@@ -29,7 +29,7 @@ footer {
 
 .social-icon {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: calc(var(--regSpacing)*2);
 }
 
@@ -42,4 +42,36 @@ footer p {
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 0.6em;
+}
+
+
+
+@media screen and (min-width: 675px) {
+
+    /* les blocs de 3 icônes se retrouvent ramenés vers le centre
+    mais chaque icône reste collée aux autres dans son bloc */
+
+
+    .footer-content {
+        justify-content: space-between;
+
+    }
+
+    .functions-icon {
+        justify-content: space-around;
+        width: 30%;
+    }
+
+    .social-icon {
+        justify-content: space-around;
+        width: 30%;
+    }
+
+    footer p {
+
+        font-weight: bold;
+
+
+    }
+
 }
