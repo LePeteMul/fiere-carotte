@@ -153,8 +153,17 @@
 
     /* =====CAROUSSEL ENDS HERE */
 
+    @media screen and (max-width: 800px) {
 
 
+
+        .main-content {
+
+            margin-left: 5%;
+            margin-right: 5%;
+
+        }
+    }
 }
 
 /* <<< fin du media screen*/
