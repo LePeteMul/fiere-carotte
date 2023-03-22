@@ -1,5 +1,5 @@
 .gris{
-    filter : grayscale(0);
+    
     background-color: white;
 }
 
@@ -70,7 +70,7 @@ select{
 
     font-family: var(--titleFont);
     width: clamp(100px, 40%, 250px);
-    font-size: calc(0.1em + 2.7vw);
+    font-size: 16px;
   }
 .box{
     display : flex;
@@ -88,7 +88,8 @@ select{
 
 
 .reca{
-    
+   
+    opacity : 0;
     height:320px;
     width :400px;
     top : 50%;
