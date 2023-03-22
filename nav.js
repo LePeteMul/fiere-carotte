@@ -8,37 +8,38 @@ function getURL() {
 let pagesNav = {}
 
 function setHTML() {
+
     if (window.screen.width >= 675) {
         pagesNav = {
             index: `<ul>
     <li><a href="./carte.html">Menu du restaurant</a></li>
     <li><a href="./valeurs.html">Nos valeurs</a></li>
     <li><a href="./nouscontacter.html">Nous contacter</a></li>   
-    <li><a href="./Reservation.html">Reserver</a></li>
+    <li><a href="./Reservation.html">Réserver</a></li>
     </ul>`,
             carte: ` <ul>
     <li><a href="./index.html">Accueil</a></li>
     <li><a href="./valeurs.html">Nos valeurs</a></li>
     <li><a href="./nouscontacter.html">Nous contacter</a></li>
-    <li><a href="./Reservation.html">Reserver</a></li>
+    <li><a href="./Reservation.html">Réserver</a></li>
     </ul>`,
             valeurs: ` <ul>
     <li><a href="./index.html">Accueil</a></li>
     <li><a href="./carte.html">Menu du restaurant</a></li>
     <li><a href="./nouscontacter.html">Nous contacter</a></li>
-    <li><a href="./Reservation.html">Reserver</a></li>
+    <li><a href="./Reservation.html">Réserver</a></li>
     </ul>`,
             contact: `<ul>
     <li><a href="./index.html">Accueil</a></li>
     <li><a href="./carte.html">Menu du restaurant</a></li>
     <li><a href="./valeurs.html">Nos valeurs</a></li>
-    <li><a href="./Reservation.html">Reserver</a></li>
+    <li><a href="./Reservation.html">Réserver</a></li>
 </ul>`,
             reservation: ` <ul>
 <li><a href="./index.html">Accueil</a></li>
 <li><a href="./valeurs.html">Nos valeurs</a></li>
 <li><a href="./nouscontacter.html">Nous contacter</a></li>
-<li><a href="./Reservation.html">Reserver</a></li>
+<li><a href="./Reservation.html">Réserver</a></li>
 </ul>`}
 
     } else {
@@ -109,6 +110,7 @@ function setHTML() {
 }
 
 function createNav() {
+
     switch (getURL()) {
         case "index.html":
             nav.innerHTML = pagesNav.index;
