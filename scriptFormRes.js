@@ -63,6 +63,7 @@ form.onsubmit=function(event){
         }
     }
     else{erreurdate.style.visibility ="hidden";}
+
     if (!telt.match(/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2})/)&&telt!=""){
         input[2].style.border="2px red solid"
         valid = false;
@@ -76,8 +77,9 @@ form.onsubmit=function(event){
         erreurdate.style.visibility ="hidden";
       
         erreurtel.style.visibility ="hidden";
-      
+       reca.style.opacity="1"
         reca.style.zIndex="999"
+
         reca.style.animation ="fadeIn 1s"
         recaname.innerHTML=`Nom & Prenom : ${namet}`
         recacouverts.innerHTML=`Couverts : ${couvertsres.value}`
@@ -86,14 +88,15 @@ form.onsubmit=function(event){
         recaheures.innerHTML=`Heure : ${heureres.value}`
         recatel.innerHTML=`Tel : ${telt}`
         gris.style.filter= "blur(5px)"
-     
+       
     }
 }
 
 
 function retourForm(){
-    window.location="./Reservation.html"
-    window.location.href = "./Reservation.html";
+    reca.style.opacity="0"
+        reca.style.zIndex="-10"
+    gris.style.filter= "blur(0px)"
 }
 
 function retourIndex(){
