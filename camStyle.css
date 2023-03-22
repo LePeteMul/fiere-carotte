@@ -1,3 +1,5 @@
+/*-----MAIN CONTENT-----*/
+
 .main-content {
   margin-top: calc(var(--regSpacing)*3);
   margin-left: 12%;
@@ -15,33 +17,44 @@
 
 }
 
+/*-----CONTACT FORM-----*/
+
+#form_button {
+  margin-top: calc(var(--regSpacing)*2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--regSpacing);
+  background-color: var(--mainGreen);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  text-transform: capitalize;
+  font-family: var(--titleFont);
+  width: clamp(100px, 40%, 250px);
+  font-size: calc(0.1em + 2.7vw);
+  cursor: pointer;
+  overflow: visible;
+  text-transform: none;
+}
+
+#contact_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 5px;
+}
 
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html {
-  font-family: 'Montserrat', Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
-body {
-  background: #ffffff;
-  width: 100%;
-}
-
-#form_button {
-  overflow: visible;
-}
-
-#form_button,
-select {
-  text-transform: none;
-}
 
 #form_button,
 input,
-select,
 textarea {
   color: #000000;
   font: inherit;
@@ -63,29 +76,10 @@ textarea {
   position: relative;
 }
 
-form {
-  padding: 37.5px;
-  margin: 50px 0;
-}
-
-
 .underline {
   border-bottom: solid 2px #474544;
   margin: -0.512em auto;
   width: 80px;
-}
-
-.icon_wrapper {
-  margin: 50px auto 0;
-  width: 100%;
-}
-
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
 }
 
 .email {
@@ -139,16 +133,6 @@ textarea:focus {
   width: 45%;
 }
 
-select {
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
-  outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
-select::-ms-expand {
-  display: none;
-}
 
 .subject {
   width: 100%;
@@ -198,32 +182,7 @@ textarea {
   font-size: calc(0.1em + 2.7vw);
 }
 
-#form_button {
-  margin-top: calc(var(--regSpacing)*2);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: var(--regSpacing);
-  background-color: var(--mainGreen);
-  border: none;
-  border-radius: 5px;
-  padding: 10px 5px;
-  text-transform: capitalize;
-  font-family: var(--titleFont);
-  width: clamp(100px, 40%, 250px);
-  font-size: calc(0.1em + 2.7vw);
-  cursor: pointer;
-}
 
-#contact_form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 5px;
-}
 
 @media screen and (max-width: 768px) {
   #container {
@@ -247,12 +206,6 @@ textarea {
 }
 
 @media screen and (max-width: 420px) {
-
-
-  .icon {
-    height: 35px;
-    width: 35px;
-  }
 
   .underline {
     width: 53px;
