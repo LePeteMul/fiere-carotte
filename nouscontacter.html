@@ -25,7 +25,7 @@
 <body>
     <div class="hero">
         <a class="hero-reserver" href="./Reservation.html">Réservation</a>
-        <img class="hero-img" src="assets/img-cheval-carotte.jpg">
+        <img class="hero-img" src="assets/salad-tomate-oignon.jpg">
     </div>
 
     <div class="main-content">
@@ -53,7 +53,14 @@
             <textarea name="message" placeholder="Message:" id="message_input" cols="30" rows="3" required></textarea>
         </div>
         <div class="submit">
-            <input type="submit" value="Envoyer" id="form_button" />
+            <a href="#popup" class="contactButton" >Envoyer</a>
+        </div>
+        <div id="popup" class="overlay">
+            <div class="popup">
+                <h6> Votre message a bien été envoyé!</h6>
+                <a href="#" class="cross">&times;</a>
+                <div class="jpp"></div>
+            </div>
         </div>
     </form>
 

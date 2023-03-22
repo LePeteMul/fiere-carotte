@@ -43,14 +43,14 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 12%;
+  padding-right: 12%;
   padding-bottom: 5px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-
+.email {
+  width: 45%;
+}
 
 #form_button,
 input,
@@ -66,55 +66,6 @@ input {
 
 textarea {
   overflow: auto;
-}
-
-#container {
-  border: solid 3px #474544;
-  max-width: 768px;
-  margin: 60px auto;
-  position: relative;
-}
-
-.underline {
-  border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
-}
-
-.email {
-  width: 45%;
-}
-
-input[type='text'],
-[type='email'],
-select,
-textarea {
-  background: none;
-  border: none;
-  border-bottom: solid 2px #474544;
-  color: #474544;
-  font-size: 15px;
-  margin: 0em 0 1.875em 0;
-  padding: 0 0 0.875em 0;
-  text-transform: uppercase;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-input[type='text']:focus,
-[type='email']:focus,
-textarea:focus {
-  outline: none;
-  padding: 0 0 0.875em 0;
 }
 
 .message {
@@ -148,6 +99,40 @@ textarea {
   width: 100%;
 }
 
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 15px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+
 ::-webkit-input-placeholder {
   color: #474544;
 }
@@ -180,40 +165,105 @@ textarea {
   width: clamp(100px, 40%, 250px);
   font-size: calc(0.1em + 2.7vw);
 }
+/*---------POP-UP-----------*/
+
+.submit {
+  
+  width: 100px;
+  height: 10px;
+  padding-top: 10 rem;
+  padding-bottom: 30px;
+  
+  
+}
+
+.contactButton {
+
+  margin-top: calc(var(--regSpacing)*2);
+  margin-right: auto;
+  margin-bottom: var(--regSpacing);
+  background-color: var(--mainGreen);
+  padding:15px;
+  border:none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-family: var(--titleFont);
+  width: 150px;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: visible;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.overlay {
+
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background: rgba(0,0,0,0.7);
+  transition: opacity .4s;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.overlay:target {
+
+  visibility: visible;
+  opacity: 1;
+
+}
 
 
+.popup {
 
-@media screen and (max-width: 768px) {
-  #container {
-    margin: 20px auto;
-    width: 95%;
+  margin : 6rem auto;
+  padding : 2rem;
+  background: #fff;
+  border-radius :5px;
+  z-index:999;
+  width: 50%;
+  height: 200px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.popup .cross {
+
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition :0.3s ease;
+  color:black
+
+}
+
+/*---------RESPONSIVE 675px-----------*/
+
+@media screen and (min-width:675px) {
+  #contact_form {
+    padding-left:20%;
+    padding-right:20%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  h4 {
-    font-size: 26px;
-  }
-
-  .underline {
-    width: 68px;
-  }
-
-  #form_button {
-    padding: 15px 25px;
+@media screen and (min-width:675px) {
+  .main-content {
+    padding-left:8%;
+    padding-right:8%;
   }
 }
 
-@media screen and (max-width: 420px) {
-
-  .underline {
-    width: 53px;
-  }
-
-  input[type='text'],
-  [type='email'],
-  select,
-  textarea {
-    font-size: 0.875em;
+@media screen and (min-width:675px) {
+  .hero-img {
+    display: block;
+    
   }
 }
