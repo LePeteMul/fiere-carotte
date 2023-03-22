@@ -87,16 +87,18 @@ var Messenger = function (el) {
 
     m.init();
 }
-console.clear();
+
 
 //Script du menu déroulant
 var menuButton = document.querySelector('#menu-button');
 var menu = document.querySelector('#menu');
 
 menuButton.addEventListener('click', function () {
-    menu.classList.toggle('show-menu');
-    menuButton.classList.toggle('close');
-    var messenger = new Messenger($('#messenger'));
+    if (window.screen.width < 675) {
+        menu.classList.toggle('show-menu');
+        menuButton.classList.toggle('close');
+        var messenger = new Messenger($('#messenger'));
+    }
 });
 
 
@@ -111,6 +113,7 @@ let mPlats = document.getElementById("mPlats");
 let mDesserts = document.getElementById("mDesserts");
 
 
+
 bpJour.addEventListener("click", () =>{
       mPlats.style.display = "none";
       mEntrees.style.display = "none";
@@ -118,23 +121,24 @@ bpJour.addEventListener("click", () =>{
       mJour.style.display = "block";
   })
 
-  bpEntrees.addEventListener("click", () => {
+bpEntrees.addEventListener("click", () => {
     mPlats.style.display = "none";
     mEntrees.style.display = "block";
     mDesserts.style.display = "none";
     mJour.style.display = "none";
-  })
+})
 
-  bpPlats.addEventListener("click", () => {
+bpPlats.addEventListener("click", () => {
     mPlats.style.display = "block";
     mEntrees.style.display = "none";
     mDesserts.style.display = "none";
     mJour.style.display = "none";
-  })
-  bpDesserts.addEventListener("click", () => {
+})
+bpDesserts.addEventListener("click", () => {
     mPlats.style.display = "none";
     mEntrees.style.display = "none";
     mDesserts.style.display = "block";
     mJour.style.display = "none";
+
   })
 

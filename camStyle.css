@@ -1,3 +1,5 @@
+/*-----MAIN CONTENT-----*/
+
 .main-content {
   margin-top: calc(var(--regSpacing)*3);
   margin-left: 12%;
@@ -15,32 +17,43 @@
 
 }
 
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-html {
-  font-family: 'Montserrat', Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  background: #ffffff;
-  width: 100%;
-}
+/*-----CONTACT FORM-----*/
 
 #form_button {
+  margin-top: calc(var(--regSpacing)*2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--regSpacing);
+  background-color: var(--mainGreen);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  text-transform: capitalize;
+  font-family: var(--titleFont);
+  width: clamp(100px, 40%, 250px);
+  font-size: calc(0.1em + 2.7vw);
+  cursor: pointer;
   overflow: visible;
+  text-transform: none;
 }
 
-#form_button,
-select {
-  text-transform: none;
+#contact_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 35px;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 5px;
+}
+
+.email {
+  width: 45%;
 }
 
 #form_button,
 input,
-select,
 textarea {
   color: #000000;
   font: inherit;
@@ -55,41 +68,37 @@ textarea {
   overflow: auto;
 }
 
-#container {
-  border: solid 3px #474544;
-  max-width: 768px;
-  margin: 60px auto;
-  position: relative;
+.message {
+  float: none;
+  width: 50%;
 }
 
-form {
-  padding: 37.5px;
-  margin: 50px 0;
+.message_input {
+
+  width: 45%;
+}
+
+.name {
+  float: left;
+  width: 45%;
 }
 
 
-.underline {
-  border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
-}
-
-.icon_wrapper {
-  margin: 50px auto 0;
+.subject {
   width: 100%;
 }
 
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
-}
-
-.email {
+.telephone {
   width: 45%;
 }
+
+textarea {
+  line-height: 150%;
+  height: 100px;
+  resize: none;
+  width: 100%;
+}
+
 
 input[type='text'],
 [type='email'],
@@ -123,46 +132,6 @@ textarea:focus {
   padding: 0 0 0.875em 0;
 }
 
-.message {
-  float: none;
-  width: 50%;
-}
-
-.message_input {
-
-  width: 45%;
-}
-
-.name {
-  float: left;
-  width: 45%;
-}
-
-select {
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
-  outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-.subject {
-  width: 100%;
-}
-
-.telephone {
-  width: 45%;
-}
-
-textarea {
-  line-height: 150%;
-  height: 100px;
-  resize: none;
-  width: 100%;
-}
 
 ::-webkit-input-placeholder {
   color: #474544;
@@ -196,71 +165,105 @@ textarea {
   width: clamp(100px, 40%, 250px);
   font-size: calc(0.1em + 2.7vw);
 }
+/*---------POP-UP-----------*/
 
-#form_button {
+.submit {
+  
+  width: 100px;
+  height: 10px;
+  padding-top: 10 rem;
+  padding-bottom: 30px;
+  
+  
+}
+
+.contactButton {
+
   margin-top: calc(var(--regSpacing)*2);
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--regSpacing);
   background-color: var(--mainGreen);
-  border: none;
+  padding:15px;
+  border:none;
   border-radius: 5px;
-  padding: 10px 5px;
   text-transform: capitalize;
   font-family: var(--titleFont);
-  width: clamp(100px, 40%, 250px);
-  font-size: calc(0.1em + 2.7vw);
+  width: 150px;
+  font-size: 15px;
   cursor: pointer;
+  overflow: visible;
+  text-transform: none;
+  text-decoration: none;
 }
 
-#contact_form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 5px;
+.overlay {
+
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background: rgba(0,0,0,0.7);
+  transition: opacity .4s;
+  visibility: hidden;
+  opacity: 0;
+
 }
 
-@media screen and (max-width: 768px) {
-  #container {
-    margin: 20px auto;
-    width: 95%;
+.overlay:target {
+
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+.popup {
+
+  margin : 6rem auto;
+  padding : 2rem;
+  background: #fff;
+  border-radius :5px;
+  z-index:999;
+  width: 50%;
+  height: 200px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.popup .cross {
+
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition :0.3s ease;
+  color:black
+
+}
+
+/*---------RESPONSIVE 675px-----------*/
+
+@media screen and (min-width:675px) {
+  #contact_form {
+    padding-left:20%;
+    padding-right:20%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  h4 {
-    font-size: 26px;
-  }
-
-  .underline {
-    width: 68px;
-  }
-
-  #form_button {
-    padding: 15px 25px;
+@media screen and (min-width:675px) {
+  .main-content {
+    padding-left:8%;
+    padding-right:8%;
   }
 }
 
-@media screen and (max-width: 420px) {
-
-
-  .icon {
-    height: 35px;
-    width: 35px;
-  }
-
-  .underline {
-    width: 53px;
-  }
-
-  input[type='text'],
-  [type='email'],
-  select,
-  textarea {
-    font-size: 0.875em;
+@media screen and (min-width:675px) {
+  .hero-img {
+    display: block;
+    
   }
 }

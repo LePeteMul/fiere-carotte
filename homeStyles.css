@@ -30,3 +30,23 @@
 .ouverture {
     text-align: center;
 }
+
+@media screen and (min-width: 675px) {
+    .main-button {
+        font-size: calc(0.1em + 1.8vw);
+    }
+}
+
+.hero h2 {
+    animation: HomefadeIn 1s;
+}
+
+@keyframes HomefadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
