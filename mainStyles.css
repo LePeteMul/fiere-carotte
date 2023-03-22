@@ -216,6 +216,13 @@ nav a {
     z-index: 1;
 }
 
+.hero-reserver:hover {
+    background-color: white;
+    border: 1px solid var(--mainOrange);
+    color: var(--mainOrange);
+}
+
+
 /*-----MAIN CONTENT-----*/
 
 .main-content {
@@ -239,8 +246,86 @@ p {
     border-bottom: 2px solid var(--titleColor);
 }
 
+/*----- RESPONSIVE ----- */
+
+@media screen and (min-width: 675px) {
+
+    .header {
+        z-index: 900;
+        background-color: var(--mainGreen);
+    }
+
+    nav {
+        all: none;
+        width: 100%;
+        position: unset;
+        height: 50px;
+    }
+
+    #menu,
+    #menu.show-menu {
+        position: unset;
+        transform: none;
+        max-width: none;
+        transition: none;
+    }
+
+    nav ul {
+        display: flex;
+        position: fixed;
+        right: 0;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 63%;
+        z-index: 999;
+        font-size: 0.65em;
+        box-shadow: none;
+        transition: none;
+
+    }
+
+    nav li {
+        height: 50px;
+    }
+
+    nav li a {
+        position: relative;
+    }
+
+    nav li a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--mainOrange);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    nav li a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 
 
+    #menu-button {
+        visibility: hidden;
+    }
+
+
+
+    .menu-reserver {
+        position: unset;
+        width: 30px;
+    }
+
+    .hero {
+        padding-top: 0px;
+    }
+}
 /* gestion du Hero en mode desktop : */
 @media screen and (min-width: 675px) {
 
@@ -268,4 +353,5 @@ pas de zone blanche : */
         height: 100%;
         width: auto;
     }
+
 }
