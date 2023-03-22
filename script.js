@@ -112,7 +112,7 @@ let mDesserts = document.getElementById("mDesserts");
 
 
 bpJour.addEventListener("click", () =>{
-      mPlats.style.display = "";
+      mPlats.style.display = "none";
       mEntrees.style.display = "none";
       mDesserts.style.display = "none";
       mJour.style.display = "block";
@@ -137,3 +137,4 @@ bpJour.addEventListener("click", () =>{
     mDesserts.style.display = "block";
     mJour.style.display = "none";
   })
+
