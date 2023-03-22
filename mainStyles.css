@@ -179,13 +179,11 @@ nav a {
     position: absolute;
     left: 0;
     right: 0;
-
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     width: clamp(200px, 70%, 400px);
     font-size: calc(0.2rem + 2.8vw);
-
     background-color: rgba(255, 255, 255, 0.88);
     padding: 5% 2%;
     text-align: center;
@@ -193,6 +191,8 @@ nav a {
     color: inherit;
     text-transform: inherit;
 }
+
+/*-----BOUTON DU HERO-----*/
 
 .hero-reserver {
     text-decoration: none;
@@ -202,7 +202,7 @@ nav a {
     left: 0;
     right: 0;
     background-color: var(--mainOrange);
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px 5px;
     margin-left: auto;
@@ -216,10 +216,33 @@ nav a {
     z-index: 1;
 }
 
+a span {
+    position: relative;
+    z-index: 2;
+}
+
 .hero-reserver:hover {
-    background-color: white;
-    border: 1px solid var(--mainOrange);
-    color: var(--mainOrange);
+    color: white;
+    border: none;
+}
+
+.hero-reserver:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--mainGreen);
+    transition: all .35s;
+    border-radius: 5px;
+
+}
+
+.hero-reserver:hover:after {
+    width: 100%;
+    border: 1px white solid;
+
 }
 
 
@@ -326,6 +349,7 @@ p {
         padding-top: 0px;
     }
 }
+
 /* gestion du Hero en mode desktop : */
 @media screen and (min-width: 675px) {
 
