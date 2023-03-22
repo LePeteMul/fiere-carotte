@@ -13,9 +13,12 @@
 </head>
 <div class="gris">
     <header class="header">
+
     <h1 class="header-title">La fière carotte</h1>
     <div id="menu-button" class="close"></div>
     <a href="./index.html"> <img class="logo" src="assets/main-logo.png"></a>
+
+
     </header>
     <nav id="menu">
 
@@ -23,95 +26,95 @@
 
     <body>
 
-    <div class="hero">
-        <h2>Réserver une table</h2>
-        <a class="hero-reserver" href="./carte.html">La carte</a>
-        <img class="hero-img" src="assets/table vegan.jpg">
-    </div>
+        <div class="hero">
+            <h2>Réserver une table</h2>
+            <a class="hero-reserver" href="./carte.html"><span>La carte</span></a>
+            <img class="hero-img" src="assets/table vegan.jpg">
+        </div>
 
-    <div class="reservation">
-        <h2>Réservation </h2>
-        <div class="separator"></div>
-       
-        <div id="erreurdate"> </div>
-        <div id ="erreurtel"></div>
+        <div class="reservation">
+            <h2>Réservation </h2>
+            <div class="separator"></div>
 
-    </div>
-
-
-
-
-
-
-
-
-    <form id="form">
-
-        <div class="formulaire">
-            <div class="box">
-                <label for="Date">Date de réservation :</label>
-
-            </div>
-            <input type="date" id="date">
+            <div id="erreurdate"> </div>
+            <div id="erreurtel"></div>
 
         </div>
-        <div class="deroul">
+
+
+
+
+
+
+
+
+        <form id="form">
+
             <div class="formulaire">
-                <label for="time">Heure de réservation :</label>
-                <select 
-                 id="heures">
+                <div class="box">
+                    <label for="Date">Date de réservation :</label>
 
-                    <option>12h00</option>
-                    <option>12h30</option>
-                    <option>13h00</option>
-                    <option>13h30</option>
-                    <option>19h00</option>
-                    <option>19h30</option>
-                    <option>20h00</option>
-                    <option>20h30</option>
-                    <option>21h00</option>
-                    <option>21h30</option>
+                </div>
+                <input type="date" id="date">
+
+            </div>
+            <div class="deroul">
+                <div class="formulaire">
+                    <label for="time">Heure de réservation :</label>
+                    <select id="heures">
+
+                        <option>12h00</option>
+                        <option>12h30</option>
+                        <option>13h00</option>
+                        <option>13h30</option>
+                        <option>19h00</option>
+                        <option>19h30</option>
+                        <option>20h00</option>
+                        <option>20h30</option>
+                        <option>21h00</option>
+                        <option>21h30</option>
 
 
-                </select>
+                    </select>
+                </div>
+                <div class="formulaire">
+                    <label for="select"> Nombre de couverts :</label>
+                    <select id="couverts">
+
+                        <option>1 couvert</option>
+                        <option>2 couverts</option>
+                        <option>3 couverts</option>
+                        <option>4 couverts</option>
+                        <option>5 couverts</option>
+                        <option>6 couverts</option>
+                        <option>7 couverts</option>
+                        <option>8 couverts</option>
+                    </select>
+                </div>
             </div>
             <div class="formulaire">
-                <label for="select"> Nombre de couverts :</label>
-                <select id="couverts">
-
-                    <option>1 couvert</option>
-                    <option>2 couverts</option>
-                    <option>3 couverts</option>
-                    <option>4 couverts</option>
-                    <option>5 couverts</option>
-                    <option>6 couverts</option>
-                    <option>7 couverts</option>
-                    <option>8 couverts</option>
-                </select>
+                <label for="name">Nom & Prenom :</label>
+                <input type="text" id="name">
+                <span id="erreur"> </span>
             </div>
-        </div>
-        <div class="formulaire">
-            <label for="name">Nom & Prenom :</label>
-            <input type="text" id="name">
-            <span id="erreur"> </span>
-        </div>
 
-        <div class="formulaire">
-            <label for="Tel">Téléphone :</label>
-            <input type="tel" id="tel">
-            <span id="erreur"> </span>
+            <div class="formulaire">
+                <label for="Tel">Téléphone :</label>
+                <input type="tel" id="tel">
+                <span id="erreur"> </span>
 
-        </div>
+            </div>
 
 
-        <div class="main-button">
+            <div class="main-button">
 
-            <button id="reser" type="submit">Réserver</button>
-        </div>
-    </form>
+                <button id="reser" type="submit">Réserver</button>
+            </div>
+        </form>
 
 
 </div>
+
   
  
     <div class = reca> 
@@ -132,9 +135,11 @@
         <button type="button" id="reser"  onclick="retourIndex()" href="./index.html">Confirmer</button>
         <button type="button" id="reser" onclick="retourForm()" >Annuler</button>
         </div>
-    </div>
 
-    
+    </div>
+</div>
+
+
 </body>
 
 <footer>

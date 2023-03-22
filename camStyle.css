@@ -165,16 +165,17 @@ textarea:focus {
   width: clamp(100px, 40%, 250px);
   font-size: calc(0.1em + 2.7vw);
 }
+
 /*---------POP-UP-----------*/
 
 .submit {
-  
+
   width: 100px;
   height: 10px;
   padding-top: 10 rem;
   padding-bottom: 30px;
-  
-  
+
+
 }
 
 .contactButton {
@@ -183,8 +184,8 @@ textarea:focus {
   margin-right: auto;
   margin-bottom: var(--regSpacing);
   background-color: var(--mainGreen);
-  padding:15px;
-  border:none;
+  padding: 15px;
+  border: none;
   border-radius: 5px;
   text-transform: capitalize;
   font-family: var(--titleFont);
@@ -198,12 +199,12 @@ textarea:focus {
 
 .overlay {
 
-  position:fixed;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  right:0;
-  background: rgba(0,0,0,0.7);
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
   transition: opacity .4s;
   visibility: hidden;
   opacity: 0;
@@ -220,16 +221,21 @@ textarea:focus {
 
 .popup {
 
-  margin : 6rem auto;
-  padding : 2rem;
+
+  margin: 6rem auto;
+  padding: 2rem;
+
   background: #fff;
-  border-radius :5px;
-  z-index:999;
+  border-radius: 5px;
   width: 50%;
-  height: 200px;
+  height: 100px;
   position: relative;
   transition: all 0.4s ease-in-out;
 
+}
+
+#popup {
+  z-index: 999;
 }
 
 .popup .cross {
@@ -240,30 +246,33 @@ textarea:focus {
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  transition :0.3s ease;
-  color:black
+  transition: 0.3s ease;
+  color: black
+}
 
+h6 {
+  margin-bottom: 20px;
 }
 
 /*---------RESPONSIVE 675px-----------*/
 
 @media screen and (min-width:675px) {
   #contact_form {
-    padding-left:20%;
-    padding-right:20%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
 @media screen and (min-width:675px) {
   .main-content {
-    padding-left:8%;
-    padding-right:8%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 
 @media screen and (min-width:675px) {
   .hero-img {
     display: block;
-    
+
   }
 }
