@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="ReservationStyles.css">
     <link rel="stylesheet" href="smallFooter.css">
 </head>
-
+<div class="gris">
 <header class="header">
     <h1 class="header-title">La fière carotte</h1>
     <div id="menu-button" class="close"></div>
@@ -44,7 +44,10 @@
     <div class="reservation">
         <h2>Réservation </h2>
         <div class="separator"></div>
-        <span id="erreurdate"> </span>
+       
+        <div id="erreurdate"> </div>
+        <div id ="erreurtel"></div>
+
     </div>
 
 
@@ -67,7 +70,8 @@
         <div class="deroul">
             <div class="formulaire">
                 <label for="time">Heure de réservation :</label>
-                <select id="heures">
+                <select 
+                 id="heures">
 
                     <option>12h00</option>
                     <option>12h30</option>
@@ -118,11 +122,34 @@
         </div>
     </form>
 
-
+</div>
 
     </div>
+ 
+    <div class = reca> 
+        <div class = titrereca>
+            <h2>Merci pour votre réservation !</h2>
+      
+        <div class="separator"></div>
+        <h2 id="petittitre">Recapitulatif de réservation :</h2>
+        </div>
+        <div class= nomreca> </div>
+        <div class= recacouverts> </div>
+        <div class= datereca> </div>
+        <div class= recaheures> </div>
+        <div class= telreca> </div>
+        
+       
+        <div>
+          
+             </div>
+        <div class = boutons>
+        <button type="button" id="reser"  onclick="retourIndex()" href="./index.html">Confirmer</button>
+        <button type="button" id="reser" onclick="retourForm()" href="./Reservation.html">Annuler</button>
+        </div>
+    </div>
 
-
+    
 </body>
 
 <footer>
