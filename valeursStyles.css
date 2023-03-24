@@ -89,6 +89,7 @@
         position: relative;
         height: 300px;
         width: 600px;
+
     }
 
     .slides-container {
@@ -102,6 +103,7 @@
         overflow: scroll;
         overflow: hidden;
         scroll-behavior: smooth;
+        border-radius: 10px;
     }
 
     .slide {

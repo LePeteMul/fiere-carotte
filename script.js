@@ -114,12 +114,13 @@ let mPlats = document.getElementById("mPlats");
 let mDesserts = document.getElementById("mDesserts");
 
 
-bpJour.addEventListener("click", () => {
-    mPlats.style.display = "";
-    mEntrees.style.display = "none";
-    mDesserts.style.display = "none";
-    mJour.style.display = "block";
-})
+
+bpJour.addEventListener("click", () =>{
+      mPlats.style.display = "none";
+      mEntrees.style.display = "none";
+      mDesserts.style.display = "none";
+      mJour.style.display = "block";
+  })
 
 bpEntrees.addEventListener("click", () => {
     mPlats.style.display = "none";
@@ -139,4 +140,6 @@ bpDesserts.addEventListener("click", () => {
     mEntrees.style.display = "none";
     mDesserts.style.display = "block";
     mJour.style.display = "none";
-})
+
+  })
+
