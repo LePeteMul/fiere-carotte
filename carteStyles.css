@@ -21,7 +21,7 @@ h4 {
 }
 
 .main-button {
-
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--regSpacing);
@@ -36,11 +36,34 @@ h4 {
     cursor: pointer;
 
 }
-/*
-#p1 {
-    padding: calc(var(--regSpacing)*3);
-  */  
+.main-button:hover {
+    color: white;
+    border: none;
 }
+
+.main-button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: var(--mainOrange);
+    transition: all .35s;
+    border-radius: 5px;
+}
+
+.main-button:hover:after {
+    width: 100%;
+    border: 1px black solid;
+
+}
+span {
+    position: relative;
+    z-index: 2;
+}
+
+
 .flipOutX #p1 {
     -webkit-animation-name: flipOutX;
     animation-name: flipOutX;
@@ -88,10 +111,9 @@ h4 {
 
 .Carte #p1 {
     text-align: center;
-
 }
 .description{
-    width: 50px;
+    width: 80%;
 }
 #mEntrees,
 #mPlats,
@@ -101,12 +123,17 @@ h4 {
 
 @media screen and (min-width: 675px) {
     .navMenu1{
-        width: 50%;
+        width: 30%;
+      
+
     }
     .description{
-        margin-left: 50px;
-        margin-right: 50px;
+        width: 60%;}
+        
+    .main-button{
+          font-size: calc(0.1em + 1.5vw);
     }
-
-
+    u{
+        font-size:calc(0.1em + 1.3vw);
+    }
   }
