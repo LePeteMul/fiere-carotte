@@ -1,7 +1,12 @@
-// Sélectionnez le bouton de soumission
-const formButton = document.querySelector('#form_button');
+const nom = document.querySelector("#name_input");
+const bouton = document.querySelector(".contactButton");
+const over = document.querySelector(".jpp");
 
-// Ajoutez un événement "click" au bouton de soumission
-formButton.addEventListener('click', function() {
-  alert('Votre message a été envoyé avec succès !');
-});
+bouton.addEventListener('click', function () {
+  console.log(over)
+  over.innerHTML = `Merci ${nom.value}, nous avons bien reçu votre message ! Nous vous réponderons prochainement !`
+
+})
+
+
+

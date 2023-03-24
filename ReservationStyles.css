@@ -1,6 +1,8 @@
-*{
-    --mainGreen: #7DC2A5
+.gris{
+    
+    background-color: white;
 }
+
 form{
     display : flex;
     flex-direction : column;
@@ -8,7 +10,7 @@ form{
     margin-left : 30%;
     margin-right : 30%;
     padding : 8px;
-
+    
 }
 .formulaire{
     display : flex ;
@@ -33,6 +35,10 @@ input{
     
 
 }
+
+
+
+
 select{
     gap : 8 px;
     border : 2px black solid;
@@ -53,9 +59,9 @@ select{
 }
   #reser{
    
- 
-    
-  
+    text-transform: initial;
+    cursor: pointer;
+    position: relative;
     margin-top: calc(var(--regSpacing)*2);
     margin-left: auto;
     margin-right: auto;
@@ -65,11 +71,37 @@ select{
     border-radius: 5px;
     padding: 10px 10px;
   
-    text-transform: capitalize;
+
     font-family: var(--titleFont);
     width: clamp(100px, 40%, 250px);
-    font-size: calc(0.1em + 2.7vw);
+    font-size: 16px;
   }
+
+
+button span{
+    position : relative;
+    z-index : 2;
+}
+
+#reser:hover{
+    color : white;
+}
+#reser:after{
+    position : absolute;
+    top:0;
+    right : 0;
+    height :100%;
+    background-color : var(--mainOrange);
+    transition : all .35s;
+    border-radius : 5px;
+    content : "";
+    width : 0;
+}
+#reser:hover:after{
+    width : 100% ;
+    border : 1px black solid;
+    
+}
 .box{
     display : flex;
     justify-content : space-between;
@@ -77,4 +109,48 @@ select{
 #erreurdate{
    visibility: hidden;
     color : red;
+}
+#erreurtel{
+    margin-top : 8px;
+    visibility: hidden;
+     color : red;
+ }
+
+
+.reca{
+   
+    opacity : 0;
+    height:320px;
+    width :400px;
+    top : 50%;
+    left : 50%;
+    position: fixed;
+    margin-top: -160px; 
+    margin-left: -200px;
+    
+    border: 2px solid black;
+    z-index: -10;
+    background-color: white;
+    padding : 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+}
+@keyframes fadeIn{
+    0% {opacity : 0;}
+    100%{opacity:100}
+}
+
+#petittitre{
+    font-size : 20px;
+
+}
+.boutons{
+ display : flex
+ 
+}
+.reca > div{
+    margin-top : 8px;
+}
+.boutons > #reser{
+   font-size: 20px;
 }

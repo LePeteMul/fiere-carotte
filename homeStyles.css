@@ -10,6 +10,7 @@
 }
 
 .main-button {
+    position: relative;
     text-decoration: none;
     color: inherit;
     margin-top: calc(var(--regSpacing)*2);
@@ -27,6 +28,41 @@
     text-align: center;
 }
 
+.main-button:hover {
+    color: white;
+    border: none;
+}
+
+.main-button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: var(--mainOrange);
+    transition: all .35s;
+    border-radius: 5px;
+}
+
+.main-button:hover:after {
+    width: 100%;
+    border: 1px black solid;
+
+}
+
+
 .ouverture {
     text-align: center;
+}
+
+@media screen and (min-width: 675px) {
+    .main-button {
+        font-size: calc(0.1em + 1.1vw);
+    }
+
+    .main-content {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }

@@ -18,38 +18,23 @@
     <a href="./index.html"> <img class="logo" src="assets/main-logo.png"></a>
 </header>
 <nav id="menu">
-    <ul>
-        <li><a href="./carte.html">Menu du restaurant</a></li>
-        <li><a href="./valeurs.html">Nos valeurs</a></li>
-        <li><a href="./nouscontacter.html">Nous contacter</a></li>
 
-
-        <li>
-            <button id="animatedButton" class="menu-reserver"><a href="./Reservation.html">
-                    <div id="messenger"></div>
-                </a>
-            </button>
-        </li>
-    </ul>
 </nav>
 
 <body>
 
     <div class="hero">
-        <h2>Bienvenue à la fière carotte</h2>
-        <a class="hero-reserver" href="./Reservation.html">Réservation</a>
+        <h2>Bienvenue à la Fière Carotte</h2>
+        <a class="hero-reserver" href="./Reservation.html"><span>Réservation</span></a>
         <img class="hero-img" src="assets/valeursHero.jpg">
     </div>
+
     <div class="main-content">
-
         <h2>Nos valeurs...</h2>
-
         <div class="separator"></div>
-
         <p>Nos valeurs sont simples : vous donner le meilleur de la terre en lien avec les producteurs locaux, dans le
             respect du vivant.
             Et à pas trop cher parce qu'on n'est pas non plus des oufs, c'est la crise.</p>
-
         <div class="boiteImageMain">
             <div class="boiteImageTop">
                 <div class="valeurs-img"><img src="assets/legumes.png"></div>
@@ -57,7 +42,60 @@
             </div>
             <div class="valeurs-img"><img src="assets/valeur03.jpg"></div>
         </div>
+
+        <!--ALTERNATE SECTION en desktop
+            <div class="boiteImageMainDesktop">
+            <div class="valeurs-img">
+                <img src="assets/legumes.png">
+                <img src="assets/legumes.png">
+            </div>
+
+            <p>Si c'est trop cher pour vous, allez au kebab, on n'a pas
+                de temps pour les pauvres ici.
+            </p>
+            <div class="valeurs-img">
+                <img src="assets/legumes.png">
+                <img src="assets/legumes.png">
+            </div>
+        </div>
+              FIN DE LA VERSION DESKTOP-->
+
+
+
+        <!--CAROUSSEL STARTS HERE-->
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+            </button>
+
+            <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+            </button>
+
+            <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="assets/caroussel01.jpg"></li>
+                <li class="slide"><img src="assets/caroussel02.jpg"></li>
+                <li class="slide"><img src="assets/caroussel03.jpg"></li>
+                <li class="slide"><img src="assets/caroussel04.jpg"></li>
+            </ul>
+
+        </section>
+
+
+
+
+        <!--CAROUSSEL ENDS HERE-->
+
     </div>
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="main-footer">
@@ -69,19 +107,23 @@
                     <a href="https://goo.gl/maps/PzpQMd1XEAXccWzd6" target="_blank"> <img id="map"
                             src="assets/map.png"></a>
                 </div>
-
+                <p>Mentions légales - ©Lafièrecarotte tous droits réservés</p>
                 <div class="social-icon">
                     <a href="https://www.instagram.com" target="_blank"><img id="insta" src="assets/insta.png"></a>
                     <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="assets/facebook.png"></a>
                     <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="assets/twitter.png"></a>
                 </div>
             </div>
+
         </div>
-        <p>Mentions légales - ©Lafièrecarotte tous droits réservés</p>
+
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="script.js"></script>
+    <script src="nav.js"></script>
+    <script src="valeurs.js"></script>
 
 </body>
+
 </html>
