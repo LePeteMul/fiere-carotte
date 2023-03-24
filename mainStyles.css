@@ -68,6 +68,7 @@ h3 {
     font-size: 22px;
     color: var(--titleColor);
     padding-left: 50px;
+    text-transform: capitalize;
 }
 
 /*-----MENU-----*/
@@ -185,6 +186,7 @@ nav a {
     width: clamp(200px, 70%, 400px);
     font-size: calc(0.2rem + 2.8vw);
     background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 5px;
     padding: 5% 2%;
     text-align: center;
     z-index: 1;

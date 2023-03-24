@@ -30,7 +30,7 @@ h4 {
     border: none;
     border-radius: 5px;
     padding: 10px 5px;
-    text-transform: capitalize;
+
     font-family: var(--titleFont);
     font-size: calc(0.1em + 2.7vw);
     width: 80%;
