@@ -48,9 +48,7 @@ function setHTML() {
             index: `<ul>
     <li><a href="./carte.html">Menu du restaurant</a></li>
     <li><a href="./valeurs.html">Nos valeurs</a></li>
-    <li><a href="./nouscontacter.html">Nous contacter</a></li>
-    
-    
+    <li><a href="./nouscontacter.html">Nous contacter</a></li>    
     <li>
         <button id="animatedButton" class="menu-reserver"><a href="./Reservation.html">
                 <div id="messenger"></div>
@@ -73,8 +71,6 @@ function setHTML() {
     <li><a href="./index.html">Accueil</a></li>
     <li><a href="./carte.html">Menu du restaurant</a></li>
     <li><a href="./nouscontacter.html">Nous contacter</a></li>
-
-
     <li>
         <button id="animatedButton" class="menu-reserver"><a href="./Reservation.html">
                 <div id="messenger"></div>
@@ -131,10 +127,18 @@ function createNav() {
 
 }
 
-setHTML()
-createNav()
-window.onresize = function () { setHTML(); createNav(); console.log("test"); console.log(window.innerWidth) }
-window.addEventListener('resize', function () { setHTML(); createNav(); console.log("test") });
+function setNav() {
+    setHTML();
+    createNav()
+}
+
+setNav()
+
+window.onresize = function () {
+    setNav();
+    menu.classList.remove('show-menu');
+    menuButton.classList.add('close');
+}
 
 
 
