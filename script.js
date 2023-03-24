@@ -94,7 +94,8 @@ var menuButton = document.querySelector('#menu-button');
 var menu = document.querySelector('#menu');
 
 menuButton.addEventListener('click', function () {
-    if (window.screen.width < 675) {
+    console.log(window.innerWidth)
+    if (window.innerWidth <= 675) {
         menu.classList.toggle('show-menu');
         menuButton.classList.toggle('close');
         var messenger = new Messenger($('#messenger'));
