@@ -35,6 +35,10 @@ input{
     
 
 }
+
+
+
+
 select{
     gap : 8 px;
     border : 2px black solid;
@@ -56,8 +60,8 @@ select{
   #reser{
    
     text-transform: initial;
-    
-  
+    cursor: pointer;
+    position: relative;
     margin-top: calc(var(--regSpacing)*2);
     margin-left: auto;
     margin-right: auto;
@@ -72,6 +76,32 @@ select{
     width: clamp(100px, 40%, 250px);
     font-size: 16px;
   }
+
+
+button span{
+    position : relative;
+    z-index : 2;
+}
+
+#reser:hover{
+    color : white;
+}
+#reser:after{
+    position : absolute;
+    top:0;
+    right : 0;
+    height :100%;
+    background-color : var(--mainOrange);
+    transition : all .35s;
+    border-radius : 5px;
+    content : "";
+    width : 0;
+}
+#reser:hover:after{
+    width : 100% ;
+    border : 1px black solid;
+    
+}
 .box{
     display : flex;
     justify-content : space-between;
