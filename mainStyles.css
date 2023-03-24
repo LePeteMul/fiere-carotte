@@ -190,6 +190,17 @@ nav a {
     z-index: 1;
     color: inherit;
     text-transform: inherit;
+    animation: HomefadeIn 1s;
+}
+
+@keyframes HomefadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*-----BOUTON DU HERO-----*/
@@ -348,6 +359,12 @@ p {
     .hero {
         padding-top: 0px;
     }
+
+    h3 {
+        font-size: calc(0.2rem + 1vw);
+    }
+
+
 }
 
 /* gestion du Hero en mode desktop : */
@@ -364,18 +381,6 @@ p {
         margin-top: 140px;
     }
 
-    h3 {
-        font-size: calc(0.2rem + 2vw);
-    }
 
-}
-
-/* faire en sorte que sur écran étroit, l'image du Hero ne laisse
-pas de zone blanche : */
-@media screen and (max-width: 380px) {
-    .hero-img {
-        height: 100%;
-        width: auto;
-    }
 
 }

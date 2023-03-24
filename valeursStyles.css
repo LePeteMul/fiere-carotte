@@ -166,4 +166,14 @@
     }
 }
 
+/* faire en sorte que sur écran étroit, l'image du Hero ne laisse
+pas de zone blanche : */
+@media screen and (max-width: 370px) {
+    .hero-img {
+        height: 100%;
+        width: auto;
+    }
+
+}
+
 /* <<< fin du media screen*/
