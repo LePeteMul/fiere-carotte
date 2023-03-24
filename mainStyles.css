@@ -374,7 +374,7 @@ p {
 
     .hero h2 {
 
-        font-size: 28px;
+        font-size: calc(0.6em + 1vw);
         padding: 20px;
     }
 
