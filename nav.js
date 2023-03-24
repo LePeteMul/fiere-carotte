@@ -9,7 +9,7 @@ let pagesNav = {}
 
 function setHTML() {
 
-    if (window.screen.width >= 675) {
+    if (window.innerWidth >= 675) {
         pagesNav = {
             index: `<ul>
     <li><a href="./carte.html">Menu du restaurant</a></li>
@@ -133,7 +133,7 @@ function createNav() {
 
 setHTML()
 createNav()
-window.onresize = function () { setHTML(); createNav(); console.log("test") }
+window.onresize = function () { setHTML(); createNav(); console.log("test"); console.log(window.innerWidth) }
 window.addEventListener('resize', function () { setHTML(); createNav(); console.log("test") });
 
 
