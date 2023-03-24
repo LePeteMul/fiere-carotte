@@ -29,7 +29,7 @@
         <div class="hero">
             <h2>Réserver une table</h2>
             <a class="hero-reserver" href="./carte.html"><span>La carte</span></a>
-            <img class="hero-img" src="assets/table vegan.jpg">
+            <img class="hero-img" src="assets/heroReser.jpg">
         </div>
 
         <div class="reservation">
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="formulaire">
-                <label for="name">Nom & Prenom :</label>
+                <label for="name">Prenom :</label>
                 <input type="text" id="name">
                 <span id="erreur"> </span>
             </div>
@@ -107,8 +107,10 @@
 
 
             <div class="main-button">
+            
 
-                <button id="reser" type="submit">Réserver</button>
+                <button id="reser" type="submit"><span>  Réserver    </span></button>
+                
             </div>
         </form>
 
@@ -119,7 +121,7 @@
  
     <div class = reca> 
         <div class = titrereca>
-            <h2>Merci de votre réservation !</h2>
+            <h2 id ="merci"></h2>
       
         <div class="separator"></div>
         <h2 id="petittitre">Recapitulatif de réservation :</h2>
@@ -132,8 +134,8 @@
         
        
         <div class = boutons>
-        <button type="button" id="reser"  onclick="retourIndex()" href="./index.html">Confirmer</button>
-        <button type="button" id="reser" onclick="retourForm()" >Annuler</button>
+        <button type="button" id="reser"  onclick="retourIndex()" href="./index.html"><span>Confirmer</span></button>
+        <button type="button" id="reser" onclick="retourForm()" ><span>Annuler</span></button>
         </div>
 
     </div>

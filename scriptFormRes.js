@@ -12,6 +12,7 @@ const recacouverts = document.querySelector(".recacouverts");
 const heureres = document.querySelector("#heures");
 const couvertsres = document.querySelector("#couverts");
 const gris = document.querySelector(".gris");
+const merci = document.querySelector("#merci")
 let valid = false;
 
 
@@ -81,10 +82,13 @@ form.onsubmit=function(event){
         reca.style.zIndex="999"
 
         reca.style.animation ="fadeIn 1s"
+        merci.innerHTML=`Merci ${namet} !`
         recaname.innerHTML=`Nom & Prenom : ${namet}`
         recacouverts.innerHTML=`Couverts : ${couvertsres.value}`
-
-        recadate.innerHTML=`Date : ${datet}`
+      
+        const dateaff=new Date(datet)
+        const tabMoi = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]
+        recadate.innerHTML=`Date : ${dateaff.getDate()} ${tabMoi[dateaff.getMonth()]} ${dateaff.getFullYear()} `
         recaheures.innerHTML=`Heure : ${heureres.value}`
         recatel.innerHTML=`Tel : ${telt}`
         gris.style.filter= "blur(5px)"
